@@ -1,7 +1,7 @@
 # Datasets
 
 ## Historical Datasets
-Due to the size of the datasets, we provide [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/Eim32GoBUgVOoLolQCYbbyMBSf-PiNBbOzuQl52n3Xm94w?e=7GOz5l) an OneDrive directory, that contains additional datasets used in this work.
+Due to the size of the datasets, we provide [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/Eim32GoBUgVOoLolQCYbbyMBSf-PiNBbOzuQl52n3Xm94w?e=7GOz5l) an OneDrive directory, that contains additional datasets used in this work. Access password is: ```sigcomm2021-476```
 
 For our longitudinal analysis, we used TLS certificate scans and HTTP(S) headers, derived from the [Rapid7 - Open Data](https://opendata.rapid7.com) platform.
 
@@ -47,7 +47,7 @@ According to the Rapid7 dataset [documentation](https://opendata.rapid7.com/sona
 > The ```_certs``` file provides a mapping of the net new certificates from a given study and the corresponding fingerprint. 
 
 In our analysis, we had to download all ```_certs``` available to construct a global mapping between fingerprints and the raw certificates in PEM format.
-Moreover, we found that some fingerprints were not present in the related to HTTPS GET port-443 files, and consequently we downloaded all ```_certs``` of both available TLS/SSL certificate datasets ([SSL Certificates](https://opendata.rapid7.com/sonar.ssl/) and [More SSL Certificates (non-443)](https://opendata.rapid7.com/sonar.moressl/)). We list exactly which files we used, in order to construct the mapping between fingerprints and raw certificates [here-1](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_443_filenames.txt), [here-2](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/more_ssl_certificates_non_443_filenames.txt) and [here-3](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_non_443_filenames.txt). 
+Moreover, we found that some fingerprints were not present in the related to HTTPS GET port-443 files, and consequently we downloaded all ```_certs``` of both available TLS/SSL certificate datasets ([SSL Certificates](https://opendata.rapid7.com/sonar.ssl/) and [More SSL Certificates (non-443)](https://opendata.rapid7.com/sonar.moressl/)). We list exactly which files we used, in order to construct the mapping between fingerprints and raw certificates [here-1](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_443_filenames.txt), [here-2](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/more_ssl_certificates_non_443_filenames.txt) and [here-3](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_non_443_filenames.txt). 
 
 How to proccess Rapid7 scans:
 
@@ -92,19 +92,19 @@ from `censys-io.ipv4_public.20191119` c inner join `censys-io.certificates_publi
 ### Active Scan (Certigo)
 Except from the passive TLS scanning datasets, we also conducted in Nov. 2019 an active scan using the [Certigo](https://github.com/square/certigo) tool.
 
-The active scan dataset can be found [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/Ekb_VbFdQghCntUHh98v-NoBdnSdS_XAh6859ME1RCLDpQ?e=jFeGnZ).
+The active scan dataset can be found [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/Ekb_VbFdQghCntUHh98v-NoBdnSdS_XAh6859ME1RCLDpQ?e=jFeGnZ). Access password is: ```sigcomm2021-476```
 
 Please, copy the contents of the OneDrive folder in the ```tls_scans/active``` folder.
 
 ### HTTP headers
-The HTTP GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/headers/http/http_80_filenames.txt).
+The HTTP GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/headers/http/http_80_filenames.txt).
 
 ### HTTPS headers
-The HTTPS GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/headers/https/https_443_filenames.txt).
+The HTTPS GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/headers/https/https_443_filenames.txt).
 
 
 ## IP-to-AS Mapping
-The IP-to-AS mappings that we used in this work can be found [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/EujvVAp0lqBBpY-EgY5IZSgBLTgoxv7xwtRW92YGe9hDLA?e=2iSwLV).
+The IP-to-AS mappings that we used in this work can be found [here](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucabpgk_ucl_ac_uk/EujvVAp0lqBBpY-EgY5IZSgBLTgoxv7xwtRW92YGe9hDLA?e=2iSwLV). Access password is: ```sigcomm2021-476```
 
 Please, copy the contents of the OneDrive folder in the ```ip_to_as``` folder.
 
