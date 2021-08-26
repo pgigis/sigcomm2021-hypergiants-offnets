@@ -13,7 +13,7 @@ def load_header_fingerprints(filename):
                 line_splitted = line.rstrip().split('\t')
                 returnDict[line_splitted[0]] = line_splitted[1].lower()
     except:
-        print("Couldn't load/process header file \"{}\"".format(filename))
+        print("Couldn't load/process TLD suffixes file \"{}\"".format(filename))
         return None
     return returnDict
 
