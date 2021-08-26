@@ -37,7 +37,7 @@ In case a required dependency is missing, please contact [p.gkigkis at cs.ucl.ac
 ### Getting Acccess to the Datasets
 Our methodology uses TLS certificate scans as a building block, supplementing them with additional techniques (e.g., HTTP(S) fingerprints) and datasets (e.g., IP-to-AS mapping, APNIC user population estimates, etc..). 
 
-We document in detail the datasets [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/tree/master/datasets).
+We document in detail the datasets [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/master/datasets).
 
 
 
@@ -53,7 +53,7 @@ Meta-Analysis ```Estimate Hypergiant country coverage``` allows you to reproduce
 
 
 ## Analysis
-For the analysis part, we suggest to populate the ```datasets``` folder of this repository, following these [instructions](https://github.com/pgigis/sigcomm2021-offnets-artifacts/tree/readme/datasets).
+For the analysis part, we suggest to populate the ```datasets``` folder of this repository, following these [instructions](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/readme/datasets).
 The next steps suffice to infer the off-nets of the considered Hypergiants in this study. We will include more analysis commands that are available in the software at a later stage.
 
 
@@ -138,7 +138,7 @@ Here is an output example.
 
 
 ### **Step 4**: Parse HTTP and HTTPS headers.
-Please, refer [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/tree/master/datasets#how-to-download-a-file-from-rapid7-open-data-platform) on how to obtain the HTTP(S) header files. Due to the size of these files (~60GB compressed), we suggest to not completely uncompress them.
+Please, refer [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/master/datasets#how-to-download-a-file-from-rapid7-open-data-platform) on how to obtain the HTTP(S) header files. Due to the size of these files (~60GB compressed), we suggest to not completely uncompress them.
 In our analysis, we always use the ```gunzip -kc``` flags to keep the files compressed, while sending the output to stdout.
 
 **Step 4.1** Find the HTTP(S) header names.
@@ -251,7 +251,7 @@ ASes for Validated Off-nets:
 ```
 
 ### **Group Hypergiant validated off-nets by continent**
-The ```group_by_continent.py``` script takes as input the result folder of the analysis part (uses the validated off-nets) and the CAIDA AS-to-Organization info dataset. To obtain the latter dataset refer [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/tree/master/datasets).
+The ```group_by_continent.py``` script takes as input the result folder of the analysis part (uses the validated off-nets) and the CAIDA AS-to-Organization info dataset. To obtain the latter dataset refer [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/master/datasets).
 
 
 Execute the following command:

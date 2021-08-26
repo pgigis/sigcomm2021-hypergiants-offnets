@@ -47,7 +47,7 @@ According to the Rapid7 dataset [documentation](https://opendata.rapid7.com/sona
 > The ```_certs``` file provides a mapping of the net new certificates from a given study and the corresponding fingerprint. 
 
 In our analysis, we had to download all ```_certs``` available to construct a global mapping between fingerprints and the raw certificates in PEM format.
-Moreover, we found that some fingerprints were not present in the related to HTTPS GET port-443 files, and consequently we downloaded all ```_certs``` of both available TLS/SSL certificate datasets ([SSL Certificates](https://opendata.rapid7.com/sonar.ssl/) and [More SSL Certificates (non-443)](https://opendata.rapid7.com/sonar.moressl/)). We list exactly which files we used, in order to construct the mapping between fingerprints and raw certificates [here-1](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_443_filenames.txt), [here-2](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/more_ssl_certificates_non_443_filenames.txt) and [here-3](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_non_443_filenames.txt). 
+Moreover, we found that some fingerprints were not present in the related to HTTPS GET port-443 files, and consequently we downloaded all ```_certs``` of both available TLS/SSL certificate datasets ([SSL Certificates](https://opendata.rapid7.com/sonar.ssl/) and [More SSL Certificates (non-443)](https://opendata.rapid7.com/sonar.moressl/)). We list exactly which files we used, in order to construct the mapping between fingerprints and raw certificates [here-1](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_443_filenames.txt), [here-2](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/more_ssl_certificates_non_443_filenames.txt) and [here-3](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/tls_scans/rapid7/certificates/ssl_certificates_https_non_443_filenames.txt). 
 
 How to proccess Rapid7 scans:
 
@@ -97,10 +97,10 @@ The active scan dataset can be found [here](https://liveuclac-my.sharepoint.com/
 Please, copy the contents of the OneDrive folder in the ```tls_scans/active``` folder.
 
 ### HTTP headers
-The HTTP GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/headers/http/http_80_filenames.txt).
+The HTTP GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/headers/http/http_80_filenames.txt).
 
 ### HTTPS headers
-The HTTPS GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-offnets-artifacts/blob/master/datasets/headers/https/https_443_filenames.txt).
+The HTTPS GET Responses that we used in our analysis can be found [here](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/blob/master/datasets/headers/https/https_443_filenames.txt).
 
 
 ## IP-to-AS Mapping
