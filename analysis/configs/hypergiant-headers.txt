@@ -1,0 +1,60 @@
+# Match logic below. All comparisons are case-insensitive.
+# 1. If the header_name and header_value do not end with a *, then
+#    an a match is performed against both.
+# 2. If the header_value is empty or whitespace, then look for a match on
+#    of header_name.
+# 3. If the header_value ends with a *, then check if the test value starts
+#    with that string.
+# 4. If the header_name ends with a *, then check if the test header name starts
+#    with that string.
+# Format:
+#network,header_name,header_value
+Akamai,Server,AkamaiGhost
+Akamai,Server,Ghost
+Akamai,Server,AkamaiNetStorage
+Alibaba,server,tengine*
+Alibaba,Eagleid,
+Alibaba,Server,AliyunOSS*
+Amazon,x-amz-id2,
+Amazon,x-amz-request-id,
+Amazon,server,AmazonS3
+Amazon,server,awselb*
+Amazon,X-Amz-Cf-Id,
+Amazon,X-Amz-Cf-Pop,
+Amazon,X-Cache,Hit from cloudfront
+Amazon,x-amzn-RequestId,
+Apple,CDNUUID,
+Cdnetworks,Server,PWS/*
+Cloudflare,Server,Cloudflare
+Cloudflare,cf-cache-status,
+Cloudflare,cf-ray,
+Cloudflare,cf-request-id,
+Facebook,Server,proxygen*
+Facebook,X-FB-Debug,
+Facebook,X-FB-TRIP-ID,
+Fastly,X-Served-By,cache-*
+Google,Server,gws
+Google,Server,gvs*
+Google,Server,gvs 1.0
+Google,X-Google-Security-Signals,
+Google,X_FW_Edge,
+Google,X_FW_Cache,
+Hulu,X-Hulu-Request-Id,
+Hulu,X-HULU-NGINX,
+Incapsula,X-CDN,Incapsula
+Limelight,Server,EdgePrism*
+Limelight,X-LLID,
+LinkedIn,x-li-fabric,
+LinkedIn,x-li-pop,
+LinkedIn,x-li-proto,
+LinkedIn,x-li-static-content,
+LinkedIn,x-li-uuid,
+Microsoft,X-MSEdge-Ref,
+Microsoft,X-SharePointHealthScore,
+Microsoft,SPRequestGuid,
+Microsoft,MicrosoftSharePointTeamServices,
+Netflix,X-Netflix.*,
+Netflix,X-TCP-Info,
+Netflix,Access-Control-Expose-Headers,X-TCP-Info
+Twitter,Server,tsa_a
+Verizon,Server,ECacc*
