@@ -115,11 +115,11 @@ def get_header_filters():
                 distinct_headers[header_name] = network
             elif header_value.endswith('*'):
                 nostar = header_value[:-1]
-                fuck = header_name + ":" + nostar
-                value_substr[fuck] = network
+                tmp = header_name + ":" + nostar
+                value_substr[tmp] = network
             else:
-                fuck = header_name + ":" + header_value
-                exact_headers[fuck] = network
+                tmp = header_name + ":" + header_value
+                exact_headers[tmp] = network
     
     return distinct_headers, exact_headers, value_substr, name_substr
 
