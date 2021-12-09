@@ -53,7 +53,8 @@ Meta-Analysis ```Estimate Hypergiant country coverage``` allows you to reproduce
 
 
 ## Analysis
-For the analysis part, we suggest to populate the ```datasets``` folder of this repository, following these [instructions](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/readme/datasets).
+For the analysis part, we suggest to populate the ```datasets``` folder of this repository, following these [instructions](https://github.com/pgigis/sigcomm2021-hypergiants-offnets/tree/main/datasets).
+
 The next steps suffice to infer the off-nets of the considered Hypergiants in this study. We will include more analysis commands that are available in the software at a later stage.
 
 
